@@ -1,0 +1,122 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+//colors
+$black:hsl(0, 0%, 8%);
+$grey: hsl(0, 0%, 12%);
+$light-grey: hsl(0, 0%, 20%);
+$White: hsl(0, 0%, 100%);
+$Green: hsl(75, 94%, 57%);
+
+* { 
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      //border: 1px red solid;
+}
+
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+body {
+    font-family: "Inter", serif;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $White;
+}
+
+.profile-card {
+    background-color: $grey;
+    width: 30%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.profile-card > * {
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-container {
+    padding-bottom: 5%;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 25%;
+    margin-bottom: 5%;
+}
+
+.profile-container h1 {
+    font-size: 1.5rem;
+    padding-bottom: 2%;
+    font-weight: 500;
+}
+
+.profile-container p {
+    color: $Green;
+    font-weight: 500;
+}
+
+
+
+
+.profile-text {
+    padding-bottom: 5%;
+    padding-top: 3%;
+    color: $White;
+    font-size:0.9rem;
+}
+
+
+
+
+//social links buttons
+
+
+.social-links-container a {
+    background-color: $light-grey;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 2% 0%;
+    padding: 5%;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.social-links-container a:hover {
+    background-color: $Green;
+    color: $grey;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    html {
+        font-size: 14px; /* 1rem = 14px mobile*/
+      }
+  
+    .profile-card {
+        width: 90%;
+        padding: 5%;
+    }
+
+
+
+}
